@@ -6,5 +6,6 @@ In this repository, we will explore advanced product classification techniques u
 
 # Final Matriz with two dimension Classficiation Units Sales and Revenue
 
-![Rplot](https://github.com/user-attachments/assets/3c09eca2-adfa-4332-9165-19638c249575)
+![Rplot02](https://github.com/user-attachments/assets/54a29a0c-6b54-4ca3-872a-b84da4d979d5)
+
 
