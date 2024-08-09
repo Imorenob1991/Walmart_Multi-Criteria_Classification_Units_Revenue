@@ -36,13 +36,42 @@ Link : https://www.kaggle.com/c/m5-forecasting-accuracy/data
 
  <img width="673" alt="Graph_ABC_Classification_1_Dimension" src="https://github.com/user-attachments/assets/800e0b94-3564-4c39-bf73-703f12f258c4">
 
-![Table_ABC_Classification_1_Dimension](https://github.com/user-attachments/assets/f86a4fa5-a16a-4d03-bc82-7b6383ece2de)
+    - A Products: 43.7% of SKUs generate 80% of total sales in units. These are the fast-moving goods in Walmart stores in terms of units.
+    
+    - B Products: 28.1% of SKUs generate 15% of total sales in units. These are the regular/medium-moving goods in Walmart stores in term of units.
+    
+    - C Products: 28.2% of SKUs generate 5% of total sales in units. These are the slow-moving goods in Walmart stores in terms of units.
 
+### Some Questions and additional insights is generated from the analysis:
+1. ¿Are there B or C products that are slow movers but have a high contribution to sales in terms of revenue?
+2. ¿Are there A products that do not contribute significantly in terms of revenue?
 
+To answer these questions, a deeper analysis is required using a two-dimensional classification that considers both sales in units and revenue.
 
+## ABC Units and Revenue Classification (2 dimensions) with the code: productmix from the Inventorize Package
 
-### ABC Units and Revenue Classification (2 dimensions) with the code: productmix from the Inventorize Package
+Identyfing ABC category based on the pareto rule for both units and revenue ,a mix of nine categories are produced. Identyfing ABC category based on the pareto rule. 
+1. ABC Classification in tearms of units.
+2. ABC Classification in tearms of Revenue.
+3. Finally with this two new attributes, generate a join ("_") with these new 9 categories. 
 
 ![Rplot02](https://github.com/user-attachments/assets/54a29a0c-6b54-4ca3-872a-b84da4d979d5)
+
+#### A_A Products: 28% of SKUs generate 67% of total sales in units and 62% of total revenue. These are our star products, fast-moving and high-revenue contributors – High service level target.
+#### A_B Products: 7% of SKUs generate 11% of total sales in units and 4% of total revenue. Fast-moving products that have a medium impact in terms of revenue – High service level target.
+#### A_C Products: 1% of SKUs generate 2% of total sales in units and 0.2% of total revenue. Fast-moving products with a low ticket price (e.g., Toilet Paper).
+#### B_A Products: 14% of SKUs generate 7% of total sales in units and 17% of total revenue. Medium-moving goods with a high impact on revenue – High service level target (e.g., iPhone).
+#### B_B Products: 13% of SKUs generate 6% of total sales in units and 7% of total revenue. Medium-moving goods with a moderate impact in terms of revenue.
+#### B_C Products: 4% of SKUs generate 2% of total sales in units and 1% of total revenue. Medium-moving products with a low ticket price.
+#### C_A Products: 2% of SKUs generate 0.1% of total sales in units and 2% of total revenue. Slow-moving goods with a high impact in terms of revenue.
+#### C_B Products: 8% of SKUs generate 2% of total sales in units and 4% of total revenue. Slow-moving goods with a low impact in terms of revenue.
+#### C_C Products: 23% of SKUs generate 3% of total sales in units and 4% of total revenue. Slow-moving goods with a low impact in terms of revenue.
+
+
+
+
+
+
+
 
 
